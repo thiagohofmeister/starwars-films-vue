@@ -28,6 +28,8 @@
           <strong>Edited:</strong> {{ new Date(film.edited).toDateString() }}
         </div>
       </div>
+
+      <button class="btn btn-success btnBack" @click="$router.go(-1)">Voltar</button>
     </div>
   </div>
 </template>
@@ -63,3 +65,8 @@
     }
   }
 </script>
+
+<style lang="sass">
+  .btnBack
+    margin-top: 20px
+</style>
